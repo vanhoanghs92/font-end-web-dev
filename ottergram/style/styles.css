@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 15px;
+  color: #00fdff;
+  font-weight: bold;
+}
+
+img {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.detail-image-container {
+  margin: 15px;
+  text-align: center;
+  background: blue;
+  display: flex;
+  flex-direction: column;
+}
+
+.thmbnail-list {
+  display: flex;
+  margin: 0 15px;
+}
+
+.thmbnail-list img {
+  height: 150px;
+  width: 100%;
+}
+
+a {
+  display: block;
+}
