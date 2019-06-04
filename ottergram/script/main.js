@@ -7,30 +7,15 @@ function setDetails(imageUrl, titleText) {
   var detailTitle = document.querySelector(detailImageTitle);
 
   detailImage.setAttribute('src', imageUrl);
+  console.log(detailImage.setAttribute('src', imageUrl));
   detailTitle.textContent = titleText;
 };
 
-function imageFromThumb(thumbnail) {
- console.log(thumbnail.getAttribute('data-image-url'));
- return thumbnail.getAttribute('data-image-url');
-};
+detailImageTriggle.on('click', function(){
+   alert('run');
+});
 
-// setDetails(imageFromThumb(firstThumbnail));
+function takeUrlImage() {
 
-function thumbAddEventListener(firstThumbnail) {
-  firstThumbnail.addEventListener('click', function(event) {
-    event.preventDefault();
-    console.log(event);
-  })
-};
-var firstThumbnail = document.querySelectorAll(detailImageTriggle);
-// var arr = [].slice.call(firstThumbnail);
-console.log(firstThumbnail);
-
-function getThumbArray() {
-  var firstThumbnail = document.querySelectorAll(detailImageTriggle);
-  // var arr = [].slice.call(firstThumbnail);
-  console.log(firstThumbnail);
-};
-
-getThumbArray();
+}
+setDetails();
